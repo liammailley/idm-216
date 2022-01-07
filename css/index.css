@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: 'Poppins', sans-serif; */
+
+html{
+    --clr_bg: #101010;
+    --clr_placeholder: rgb(104, 104, 104);
+    --clr_primary_font: #ececec;
+
+    --clr_steven: #b3ffd1;
+    --clr_liam: #b3edff;
+    --clr_quinn: #ffe1b3;
+    --clr_sylar: #b3bbff;
+
+    --fs_h1: 4em;
+    --fs_h3: 1.5em;
+    --fs_deco: 18em;
+
+
+    --img_size: 500px;
+}
+
+body{
+    background-color: var(--clr_bg);
+}
+
+body > *, a{
+    color: var(--clr_primary_font);
+}
+
+#team_name{
+    font-size: var(--fs_h1);
+    width: 100%;
+    text-align: center;
+    margin: .75em auto .5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1em 10vw;
+}
+
+.card{
+    width: 100%;
+    max-width: calc(var(--img_size) - 5em);
+    padding: 1em 0;
+    margin-bottom: 5em;
+
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    justify-content: center;
+}
+
+.img{
+    position: relative;
+    height: var(--img_size);
+    width: var(--img_size);
+    margin: 0 auto;
+
+    max-height: 60vw;
+    max-width: 60vw;
+    background-color: var(--clr_placeholder);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    z-index: 5;
+}
+
+.big_letter{
+    position: relative;
+    width: 100%;
+    font-size:  var(--fs_deco);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 75%;
+    transform: translate(-2rem, -2rem);
+
+    z-index: 0;
+}
+
+.description h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: var(--fs_h3);
+}
+
+.description p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.footer{
+    height: 5em;
+    width: 100%;
+}
+
+@media screen and (min-width: 705px){
+    body{
+        --img_size: 200px;
+    }
+    .container{
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 1em 1em;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .card{
+        margin: .5em;
+        min-width: 300px;
+    }
+
+    .container .card:nth-child(2n){
+        flex-direction: column-reverse;
+    }
+
+    .container .card:nth-child(2n) .big_letter{
+        transform: translate(-2rem, 1.5rem);
+    }
+
+    .container .card:nth-child(2n+1) .big_letter{
+        transform: translate(-2rem, -1.25rem);
+    }
+}
+
+@media screen and (min-width: 1300px){
+    .container{
+
+        max-width: 1920px;
+    }
+}
+
+/* Interaction */
+.card{
+    cursor: pointer;
+}
+
+.card > *{
+    transition: 1s;
+}
+
+.card:hover > *, .card.active > *{
+    transition: .6s;
+}
+
+.card .img{
+    filter: grayscale(1);
+}
+
+.card:hover > .img, .card.active .img{
+    filter: grayscale(0);
+}
+
+#Steven .img{
+    background-image: url("../img/alisaie.jpg");
+}
+
+#Liam .img{
+    background-image: url("../img/alisaie.jpg");
+}
+
+#Quinn .img{
+    background-image: url("../img/alisaie.jpg");
+}
+
+#Sylar .img{
+    background-image: url("../img/alisaie.jpg");
+}
+
+
+#Steven:hover, #Steven.active{
+    color: var(--clr_steven);
+}
+
+#Liam:hover, #Liam.active{
+    color: var(--clr_liam);
+}
+
+#Quinn:hover, #Quinn.active{
+    color: var(--clr_quinn);
+}
+
+#Sylar:hover, #Sylar.active{
+    color: var(--clr_sylar);
+}
