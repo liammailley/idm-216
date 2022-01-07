@@ -17,7 +17,7 @@ console.log(document.body.clientHeight, window.innerHeight);
 console.log(document.body.clientHeight/window.innerHeight);
 
 function colorize_card(){
-    if(document.body.clientHeight/window.innerHeight > 1){
+    if(document.body.clientHeight/window.innerHeight > 1.5){
         var observer = new IntersectionObserver(function(entries, observer){
             entries.forEach(entry =>{
                 if(entry.isIntersecting){
