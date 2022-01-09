@@ -102,6 +102,41 @@ body > *, a{
     width: 100%;
 }
 
+#bg1, #bg2, #bg3, #bg4{
+    box-sizing: content-box;
+    width: 120vw; 
+    height: 100px;  
+    border: dashed 5px #fff;
+    position: absolute;
+    z-index: -100;
+}
+
+#bg1, #bg3{
+    border-color: #fff transparent transparent transparent;
+    border-radius: 50%/100px 100px 0 0;
+}
+
+#bg2, #bg4{
+    border-color: transparent transparent #fff transparent;
+    border-radius: 50%/0 0 100px 100px;
+}
+
+#bg1{
+    top: 500px;
+}
+
+#bg2{
+    top: 1100px;
+}
+
+#bg3{
+    top: 1825px;
+}
+
+#bg4{
+    top: 2425px;
+}
+
 @media screen and (min-width: 705px){
     body{
         --img_size: 200px;
@@ -130,6 +165,14 @@ body > *, a{
     .container .card:nth-child(2n+1) .big_letter{
         transform: translate(-2rem, -1.25rem);
     }
+
+    #bg2{
+        top: 970px;
+    }
+
+    #bg3, #bg4{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1300px){
@@ -137,6 +180,15 @@ body > *, a{
 
         max-width: 1920px;
     }
+
+    #bg1{
+        top: 470px;
+    }
+
+    #bg2{
+        display: none;
+    }
+
 }
 
 /* Interaction */
@@ -192,3 +244,4 @@ body > *, a{
 #Sylar:hover, #Sylar.active{
     color: var(--clr_sylar);
 }
+
