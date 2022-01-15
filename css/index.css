@@ -11,6 +11,7 @@ html{
     --clr_liam: #b3edff;
     --clr_quinn: #ffe1b3;
     --clr_sylar: #b3bbff;
+    --clr_cheryl: #b3bbff;
 
     --fs_h1: 4em;
     --fs_h3: 1.5em;
@@ -43,6 +44,7 @@ body > *, a{
     flex-wrap: wrap;
     align-items: center;
     padding: 1em 10vw;
+    row-gap: 3em;
 }
 
 .card{
@@ -151,7 +153,7 @@ body > *, a{
 
     .card{
         margin: .5em;
-        min-width: 300px;
+        min-width: 400px;
     }
 
     .container .card:nth-child(2n){
@@ -228,6 +230,9 @@ body > *, a{
     background-image: url("../img/alisaie.jpg");
 }
 
+#Cheryl .img{
+    background-image: url("../img/alisaie.jpg");
+}
 
 #Steven:hover, #Steven.active{
     color: var(--clr_steven);
@@ -245,3 +250,6 @@ body > *, a{
     color: var(--clr_sylar);
 }
 
+#Cheryl:hover, #Cheryl.active{
+    color: var(--clr_cheryl);
+}

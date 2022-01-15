@@ -13,11 +13,13 @@ function is_touch_screen() {
            ( navigator.msMaxTouchPoints > 0 );
 }
 
+console.log("Is touch screen: " + is_touch_screen());
+
 console.log(document.body.clientHeight, window.innerHeight);
 console.log(document.body.clientHeight/window.innerHeight);
 
 function colorize_card(){
-    if(document.body.clientHeight/window.innerHeight > 1.5){
+    if(document.body.clientHeight/window.innerHeight > 1.5 && is_touch_screen()){
         var observer = new IntersectionObserver(function(entries, observer){
             entries.forEach(entry =>{
                 if(entry.isIntersecting){
