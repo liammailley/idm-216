@@ -9,8 +9,8 @@ html{
 
     --clr_steven: #b3ffd1;
     --clr_liam: #b3edff;
-    --clr_quinn: #ffe1b3;
-    --clr_sylar: #b3bbff;
+    --clr_quinn: #deb3ff;
+    --clr_sylar: #ffe1b3;
     --clr_cheryl: #b3bbff;
 
     --fs_h1: 4em;
@@ -44,14 +44,13 @@ body > *, a{
     flex-wrap: wrap;
     align-items: center;
     padding: 1em 10vw;
-    row-gap: 3em;
+    row-gap: 7em;
 }
 
 .card{
     width: 100%;
     max-width: calc(var(--img_size) - 5em);
     padding: 1em 0;
-    margin-bottom: 5em;
 
     display: flex;
     flex-direction: column;
@@ -100,8 +99,9 @@ body > *, a{
 }
 
 .footer{
-    height: 5em;
-    width: 100%;
+    color: rgb(126, 126, 126); 
+    font-size: 1.25em;
+    transition: .5s;
 }
 
 #bg1, #bg2, #bg3, #bg4{
@@ -138,6 +138,18 @@ body > *, a{
 #bg4{
     top: 2425px;
 }
+
+p a{
+    display: inline;
+    text-decoration: underline;
+}
+
+p a:hover{
+    cursor: pointer;
+    color: blue;
+}
+
+
 
 @media screen and (min-width: 705px){
     body{
@@ -194,15 +206,12 @@ body > *, a{
 }
 
 /* Interaction */
-.card{
-    cursor: pointer;
-}
 
-.card > *{
+.card > *, .card p a{
     transition: 1s;
 }
 
-.card:hover > *, .card.active > *{
+.card:hover > *, .card.active > *, .card.active p a, .card:hover p a{
     transition: .6s;
 }
 
@@ -234,22 +243,26 @@ body > *, a{
     background-image: url("../img/alisaie.jpg");
 }
 
-#Steven:hover, #Steven.active{
+#Steven:hover, #Steven:hover p a, #Steven.active{
     color: var(--clr_steven);
 }
 
-#Liam:hover, #Liam.active{
+#Liam:hover, #Liam:hover p a, #Liam.active{
     color: var(--clr_liam);
 }
 
-#Quinn:hover, #Quinn.active{
+#Quinn:hover, #Quinn:hover p a, #Quinn.active{
     color: var(--clr_quinn);
 }
 
-#Sylar:hover, #Sylar.active{
+#Sylar:hover, #Sylar:hover p a, #Sylar.active{
     color: var(--clr_sylar);
 }
 
-#Cheryl:hover, #Cheryl.active{
+#Cheryl:hover, #Cheryl:hover p a, #Cheryl.active{
     color: var(--clr_cheryl);
+}
+
+.footer:hover{
+    color: white;
 }
