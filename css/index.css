@@ -224,23 +224,23 @@ p a:hover{
 }
 
 #Steven .img{
-    background-image: url("../img/alisaie.jpg");
+    background-image: url("../img/hs_steven.png");
 }
 
 #Liam .img{
-    background-image: url("../img/alisaie.jpg");
+    background-image: url("../img/hs_liam.jpg");
 }
 
 #Quinn .img{
-    background-image: url("../img/alisaie.jpg");
+    background-image: url("../img/hs_quinn.jpg");
 }
 
 #Sylar .img{
-    background-image: url("../img/alisaie.jpg");
+    background-image: url("../img/hs_sylar.jpg");
 }
 
 #Cheryl .img{
-    background-image: url("../img/alisaie.jpg");
+    background-image: url("../img/hs_cheryl.jpg");
 }
 
 #Steven:hover, #Steven:hover p a, #Steven.active{
