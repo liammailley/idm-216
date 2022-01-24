@@ -3,15 +3,11 @@
 /* font-family: 'Poppins', sans-serif; */
 
 html{
-    --clr_bg: #101010;
+    --clr_bg: #FAF6F2;
     --clr_placeholder: rgb(104, 104, 104);
-    --clr_primary_font: #ececec;
+    --clr_primary_font: #F2994A;
 
-    --clr_steven: #b3ffd1;
-    --clr_liam: #b3edff;
-    --clr_quinn: #deb3ff;
-    --clr_sylar: #ffe1b3;
-    --clr_cheryl: #b3bbff;
+    --clr_hover: #EE702A;
 
     --fs_h1: 4em;
     --fs_h3: 1.5em;
@@ -30,12 +26,13 @@ body > *, a{
 }
 
 #team_name{
+    color: var(--clr_hover);
     font-size: var(--fs_h1);
     width: 100%;
     text-align: center;
     margin: .75em auto .5em;
     font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .container{
@@ -44,7 +41,7 @@ body > *, a{
     flex-wrap: wrap;
     align-items: center;
     padding: 1em 10vw;
-    row-gap: 7em;
+    row-gap: 3em;
 }
 
 .card{
@@ -99,7 +96,7 @@ body > *, a{
 }
 
 .footer{
-    color: rgb(126, 126, 126); 
+    color: var(--clr_primary_font);
     font-size: 1.25em;
     transition: .5s;
 }
@@ -215,14 +212,6 @@ p a:hover{
     transition: .6s;
 }
 
-.card .img{
-    filter: grayscale(1);
-}
-
-.card:hover > .img, .card.active .img{
-    filter: grayscale(0);
-}
-
 #Steven .img{
     background-image: url("../img/hs_steven.png");
 }
@@ -245,25 +234,25 @@ p a:hover{
 }
 
 #Steven:hover, #Steven:hover p a, #Steven.active{
-    color: var(--clr_steven);
+    color: var(--clr_hover);
 }
 
 #Liam:hover, #Liam:hover p a, #Liam.active{
-    color: var(--clr_liam);
+    color: var(--clr_hover);
 }
 
 #Quinn:hover, #Quinn:hover p a, #Quinn.active{
-    color: var(--clr_quinn);
+    color: var(--clr_hover);
 }
 
 #Sylar:hover, #Sylar:hover p a, #Sylar.active{
-    color: var(--clr_sylar);
+    color: var(--clr_hover);
 }
 
 #Cheryl:hover, #Cheryl:hover p a, #Cheryl.active{
-    color: var(--clr_cheryl);
+    color: var(--clr_hover);
 }
 
 .footer:hover{
-    color: white;
+    color: var(--clr_hover);
 }
