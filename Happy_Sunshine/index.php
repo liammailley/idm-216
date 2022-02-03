@@ -1,3 +1,7 @@
+<?php
+include_once "./config.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +13,9 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    
+    <?php
+    include_once __DIR__ .'/components/header.php';
+    ?>
 
     <div class="banner">
         
@@ -104,5 +110,7 @@
       async
     ></script>
     <script src="./js/index.js"></script>
+    <script src="./js/g_map.js"></script>
+    <script src="./js/header.js"></script>
 </body>
 </html>
