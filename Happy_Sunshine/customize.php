@@ -18,9 +18,9 @@ include_once "./config.php";
      include_once __DIR__ .'/components/header.php';
      ?>
 
-     <div class="backBtn">
+     <a href="./menu.php" class="backBtn">
           <h2 class="backBtn_text"> <- Back </h2>
-     </div>
+     </a>
 
      <div class="banner">
           
@@ -36,10 +36,10 @@ include_once "./config.php";
           <div class="bread_container">
                <p><b>Bread</b> Choose 1</p>
                <div class="menu_btnContainer">
-                    <a href="" class="btn_options option1" id="bread_option1">
+                    <a class="btn_options option1" id="bread_option1">
                          Bagel 
                     </a>
-                    <a href="" class="btn_options option2" id="bread_option2">
+                    <a  class="btn_options option2" id="bread_option2">
                          Hoagie Roll
                     </a>
                </div>
@@ -48,43 +48,43 @@ include_once "./config.php";
           <div class="protein_container">
                <p><b>Protein</b> Choose 1</p>
                <div class="menu_btnContainer">
-                    <a href="" class="btn_options option1" id="protein_option1">
+                    <a class="btn_options option1" id="protein_option1">
                          None
                     </a>
-                    <a href="" class="btn_options option2" id="protein_option2">
+                    <a class="btn_options option2" id="protein_option2">
                          Bacon
                     </a>
-                    <a href="" class="btn_options option1" id="protein_option3">
+                    <a class="btn_options option1" id="protein_option3">
                          Turkey Bacon
                     </a>
-                    <a href="" class="btn_options option2" id="protein_option4">
+                    <a class="btn_options option2" id="protein_option4">
                          Sausage
                     </a>
-                    <a href="" class="btn_options option1" id="protein_option5">
+                    <a class="btn_options option1" id="protein_option5">
                          Ham
                     </a>
-                    <a href="" class="btn_options option2" id="protein_option6">
+                    <a class="btn_options option2" id="protein_option6">
                          Hot Ham
                     </a>
-                    <a href="" class="btn_options option1" id="protein_option7">
+                    <a class="btn_options option1" id="protein_option7">
                          Turkey Breast
                     </a>
-                    <a href="" class="btn_options option2" id="protein_option8">
+                    <a class="btn_options option2" id="protein_option8">
                          Pork Roll
                     </a>
-                    <a href="" class="btn_options option1" id="protein_option9">
+                    <a class="btn_options option1" id="protein_option9">
                          Scrapple
                     </a>
-                    <a href="" class="btn_options option2" id="protein_option10">
+                    <a class="btn_options option2" id="protein_option10">
                          Hot Sausage
                     </a>
-                    <a href="" class="btn_options option1" id="protein_option11">
+                    <a class="btn_options option1" id="protein_option11">
                          Kielbasa
                     </a>
-                    <a href="" class="btn_options option2" id="protein_option12">
+                    <a class="btn_options option2" id="protein_option12">
                          Steak
                     </a>
-                    <a href="" class="btn_options option1" id="protein_option13">
+                    <a class="btn_options option1" id="protein_option13">
                          Italian Sausage
                     </a>
                </div>
@@ -93,13 +93,13 @@ include_once "./config.php";
           <div class="option_container">
                <p><b>Option</b> Choose 1</p>
                <div class="menu_btnContainer">
-                    <a href="" class="btn_options option1" id="option_option1">
+                    <a class="btn_options option1" id="option_option1">
                          Egg 
                     </a>
-                    <a href="" class="btn_options option2" id="option_option2">
+                    <a class="btn_options option2" id="option_option2">
                          Hashbrown
                     </a>
-                    <a href="" class="btn_options option1" id="option_option3">
+                    <a class="btn_options option1" id="option_option3">
                          Cheese
                     </a>
                </div>
@@ -108,13 +108,13 @@ include_once "./config.php";
           <div class="topping_container">
                <p><b>Option</b> Choose 1</p>
                <div class="menu_btnContainer">
-                    <a href="" class="btn_options option1" id="topping_option1">
+                    <a class="btn_options option1" id="topping_option1">
                          Egg 
                     </a>
-                    <a href="" class="btn_options option2" id="topping_option2">
+                    <a class="btn_options option2" id="topping_option2">
                          Hashbrown
                     </a>
-                    <a href="" class="btn_options option1" id="topping_option3">
+                    <a class="btn_options option1" id="topping_option3">
                          Cheese
                     </a>
                </div>
@@ -126,7 +126,7 @@ include_once "./config.php";
 
           <p class="finalInfo"><b>Total: $4.00</b> Cash Only!</p>
 
-          <a href="./menu.php" class="btn" id="add_to_cart">
+          <a href="./cart.php" class="btn" id="add_to_cart">
                Add To Cart
           </a>
 
@@ -144,5 +144,6 @@ include_once "./config.php";
     <script src="./js/index.js"></script>
     <script src="./js/g_map.js"></script>
     <script src="./js/header.js"></script>
+    <script src="./js/customize.js"></script>
 </body>
 </html>

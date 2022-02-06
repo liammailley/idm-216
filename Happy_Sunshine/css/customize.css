@@ -1,1 +1,104 @@
-/* No CSS *//*# sourceMappingURL=customize.css.map */
+.backBtn {
+  height: 75px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.backBtn::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #faf6f2;
+  background: -webkit-gradient(linear, left bottom, left top, from(#faf6f2), color-stop(28%, rgba(250, 246, 242, 0)), to(rgba(250, 246, 242, 0)));
+  background: linear-gradient(0deg, #faf6f2 0%, rgba(250, 246, 242, 0) 28%, rgba(250, 246, 242, 0) 100%);
+}
+
+.backBtn_text {
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 1rem;
+}
+
+.menuContent {
+  margin: .5rem 1.5rem;
+}
+
+p.price {
+  font-size: 2rem;
+}
+
+#start_here {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.bread_container {
+  margin-top: 2rem;
+}
+
+.protein_container {
+  margin-top: 2rem;
+}
+
+.option_container {
+  margin-top: 2rem;
+}
+
+.topping_container {
+  margin-top: 2rem;
+}
+
+.menu_btnContainer {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.option1 {
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+.option2 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.finalInfo {
+  font-size: 1.25em;
+}
+
+.opacityClicked {
+  background: rgba(255, 0, 0, 0.8);
+}
+
+.opacityDefault {
+  background: rgba(255, 0, 0, 0.6);
+}
+/*# sourceMappingURL=customize.css.map */

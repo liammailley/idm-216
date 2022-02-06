@@ -53,6 +53,10 @@
         height: unset;
     }
 
+    &:active {
+        background: red;
+    }
+
     &:hover {
         background: $clr_secondary_hvr;
     }
