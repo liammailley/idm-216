@@ -1,5 +1,5 @@
 <?php
-include_once "./config.php";
+include_once __DIR__ . "/config.php";
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +17,7 @@ include_once "./config.php";
     include_once __DIR__ .'/components/header.php';
     ?>
 
-    <div class="banner">
+    <div class="banner desktop">
         
     </div>
     
@@ -98,12 +98,21 @@ include_once "./config.php";
             <!--The div element for the map -->
             <div id="map"></div>
 
-            <div class="footer" style="height: 500px; width: 100%;">
 
-            </div>
 
         </div>
     </div>
+
+    <div class="menu">
+        <link rel="stylesheet" href="./css/menu.css">
+        <?php
+        include_once __DIR__ .'/food_menu.php';
+        ?>
+    </div>
+
+    <div class="footer" style="height: 500px; width: 100%;">
+
+</div>
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script
       src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly&channel=2"
