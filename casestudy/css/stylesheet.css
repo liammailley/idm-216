@@ -3,33 +3,33 @@
 
 body {
      margin: 0;
-     background-color: #fdf0d5;
+     background-color: #FAF6F2;
 }
 p {
-     font-family: 'Chai', Georgia, "Times New Roman", Times, serif;
+     font-family: 'Poppins', Georgia, "Times New Roman", Times, serif;
      font-size: 1.5rem;
-     margin: 2rem 1rem;
+     margin: 2rem 2rem;
 }
 a {
-     font-family: 'NCS Radhiumz', Georgia, "Times New Roman", Times, serif;
+     font-family: 'Poppins', Georgia, "Times New Roman", Times, serif;
      font-size: 4rem;
-     margin: 2rem 1rem;
+     margin: 2rem 2rem;
 }
 a.betalink {
-     font-family: 'NCS Radhiumz', Georgia, "Times New Roman", Times, serif;
+     font-family: 'Poppins', Georgia, "Times New Roman", Times, serif;
      font-size: 1.5rem;
-     margin: 2rem 1rem;
+     margin: 2rem 2rem;
 }
 h1 {
-     font-family: 'NCS Radhiumz', 'NCS Radhiumz', Arial, Helvetica, sans-serif;
+     font-family: 'Poppins', 'NCS Radhiumz', Arial, Helvetica, sans-serif;
      font-size: 4rem;
-     margin: 2rem 1rem;
+     margin: 2rem 2rem;
 }
 h2 {
-     font-family: 'NCS Radhiumz', 'National Park R', Arial, Helvetica, sans-serif;
-     color: #28afb0;
+     font-family: 'Poppins', 'National Park R', Arial, Helvetica, sans-serif;
+     color: #EE702A;
      font-size: 3rem;
-     margin: 2rem 1rem;
+     margin: 2rem 2rem;
 }
 
  /* Header, Main, Etc. */

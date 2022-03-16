@@ -18,12 +18,12 @@
                font-size: 2rem;
           }
           p {
-               font-family: 'Poppins-Regular', Georgia, "Times New Roman", Times, serif;
+               font-family: 'Poppins', Georgia, "Times New Roman", Times, serif;
                font-size: 1.2rem;
                margin: 2rem 1rem;
           }
           a {
-               font-family: 'Poppins-Regular', Georgia, "Times New Roman", Times, serif;
+               font-family: 'Poppins', Georgia, "Times New Roman", Times, serif;
                font-size: 2rem;
                margin: 2rem 1rem;
           }
@@ -49,44 +49,82 @@
      <h1>CONTEXT AND CHALLENGE</h1>
      <h2>BACKGROUND</h2>
      <p>
-          Up until the Final assignment in this class, I had been redesigning drop-down menus for the site of SEMGeeks, a Belmar, NJ-based startup I interned for in 2018.
+          In IDM 215, two wireframes (created by the teams of Quinn and Steven, members in my group) had already been created for the Happy Sunshine app. We used these as jumping-off points to develop a working prototype.
      </p>
-     <a href="https://liammailley.com/idm241/beta/build/" class="betalink">You can check out my beta here.</a>
+     <a href="files/IDM215-HappySunshine-CaseStudy.pdf" class="betalink">Quinn's team's case study</a>
+     <a href="files/IDM215-HappySunshine-FinalPresentation.pptx" class="betalink">Steven's team's case study</a>
      <p>
-          By my beta, however, I had decided that I wanted to focus on something I could rework into my portfolio site, as I hadn't updated it in a while.
+          We chose to mostly use Quinn's team's design, but borrowed inspiration from all iterations.
      </p>
      <h2>THE PROBLEM</h2>
      <p>
-          My portfolio's way of displaying my work was clunky. It consisted of 4 different buttons for 4 different categories, each of which opened into a seperate page that displayed the projects for that category.
-          It was functional, but not intuitive. Forcing the user to jump from page to page gets overwhelming. Additionally, I wanted my portfolio to reflect my level of comfortability with HTML, CSS, and Javascript.
+          The wireframe prototype had grand ideas, but ones that would be difficult to accomplish.
+          <br><br>
+          While the general look and feel of the app was relatively complete, it was the way that systems such as the customization screen would work that would define our team's efforts.
      </p>
      <h2>GOALS AND OBJECTIVES</h2>
      <p>
-          My goal was simple: find a way to condense all of the page-jumping content of my portfolio into a single group of microinteractions on a single page.
+          Our goal, broadly, was to translate a wireframe into a prototype. To do this, we needed to establish database connections, solve unforseen usability issues, and test for bugs wih the ordering system.
+          <br><br>
+          As Data Architect, my job was the support the Coders and Designers by supplying images and files when needed, and keeping the file structure neat and navigable so that our workspace didn't become overwhelming.
      </p>
      <h1>PROCESS AND INSIGHT</h1>
      <p>
-          When I brought this idea up to my teacher, he suggested creating a variation on an image gallery. Looking through CodePen,
-          I was able to find a very smooth example to base my code off of.
+          We used Microsoft Teams as a primary mode of communication. Quickly, it became apparent that our communication would benefit from organization.
      </p>
      <div class="image_box">
-          <img class="gif" src="images/example2.gif">
+          <img class="gif" src="images/teams_tabs.png">
      </div>
      <p>
-          From there, I began creating special hover states that allowed for text to appear overtop of the image when it was hovered.
-          I wanted this bit to feel seamless, so I paid special care to the animation times in order for it to all feel like one smooth animation.
+          I began by organizing the teams into 5 main tabs.
+          Posts would cover communication, Files would hold the team's files;
+          Tasks would cover self-assigned tasks;
+          the Wiki would include all important team information;
+          and the Links tab included any other important links for team use.
           <br><br>
-          Next, I created 5 modals. Each would only be visible when its category had been selected from the gallery.
-          I transferred the content from my portfolio, and was finally able to access all of my work from one microinteraction group. 
+          Next, I organized the team's file structure.
      </p>
+     <div class="image_box">
+          <img class="gif" src="images/teams_files.png">
+     </div>
+     <p>
+          My intention was to make it very clear what each category contained, in order to help coders and designers pull in what they needed.
+          The 215 folder contained all the materials from each team member's IDM 215 work;
+          the Assets folder focused on the important logos and icons needed as a general part of the design;
+          the Docs folder contained word documents and PDFs, as well as our database sheet;
+          the Images folder contained all general images (such as backgrounds and customize pictures);
+          the Page-Designs folder contained images of our project page;
+          the Videos folder contained all videos;
+          and the Wireframes folder contained all wireframe files and assets.
+          <br><br>
+          I made the concious decision to occasionally allow for the same file to exist in 2 different folder. For instance, some logos exist both in Assets and Images. This is to make it easier for my teammates to find what they need, and was intentional.
+     </p>
+     <a href="http://liammailley.com/idm-216/HappySunshine/" class="betalink">Our project page</a>
+     <p>
+          Finally, I created a database sheet to allow for easy updating of the PHP database.
+     </p>
+     <div class="image_box">
+          <img class="gif" src="images/database_customization.png">
+     </div>
+     <p>
+          This Google Sheet would dynamically update the database, located on PHPMyAdmin. Working with the coders, I filled out the necessary variables to make the customize pages work...
+     </p>
+     <div class="image_box">
+          <img class="gif" src="images/database_menu.png">
+     </div>
+     <p>
+          ...as well as the general menu.
+     </p>
+
      <h1>THE SOLUTION</h1>
      <div class="toplink_box">
-          <a href="https://liammailley.com/idm241/final/build" class="toplink">Try it here!</a>
+          <a href="https://sylarli.com/idm216/Happy_Sunshine/final" class="toplink">Try it here!</a>
      </div>
      <h1>THE RESULTS</h1>
           <p>
-          The completed final achieves all of my goals for this project. Each microinteraction plays into the next, creating a sense of motion throughout the whole product.
-          I'm excited to implement this into my portfolio and I think it will improve both the navigation of my site and its sense of style.
+          This project was a huge amount of work for the whole team, and it wouldn't have been possible if we had been any less organized.
+          I'm proud to say that the organization of the Teams allowed for a fast and simple workflow for the designers.
+          Moreover, database integration was absolutely critical for this project, and I was able to assist with this through my database work.
      </p>
 </body>
 </html>

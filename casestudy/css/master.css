@@ -9,4 +9,6 @@
 
 .gif {
      width: 40rem;
+     margin-left: 2rem;
+     border: 5px solid black;
 }
